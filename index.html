@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WebRTC Video Stream</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>WebRTC Video Stream</h1>
+            <div class="videos">
+                <div>
+                    <video id="v1" autoplay></video>
+                    <div class="video-info" id="v1info">0x0</div>
+                </div>
+                <div>
+                    <video id="v2" autoplay></video>
+                    <div class="video-info" id="v2info">0x0</div>
+                </div>
+            </div>
+            <button onclick="start()">Start!</button>
+        </div>
+        <script src="./script.js"></script>
+        <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    </body>
+</html>
